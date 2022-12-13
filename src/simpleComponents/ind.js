@@ -7,6 +7,7 @@ import One from "../img/one.jpeg";
 import Cube from "../img/1.png";
 import { ReactComponent as ReactIcon } from "../img/all.svg";
 import styles from "./ind.css";
+import FLLT from "../ForLLT/fllt";
 
 const Clicker = hot(module)(
   class extends Component {
@@ -65,6 +66,7 @@ const Clicker = hot(module)(
           <button className={styles.button} onClick={this.dec}>
             DEC
           </button>
+          <FLLT />
         </section>
       );
     }

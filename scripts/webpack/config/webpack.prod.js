@@ -6,10 +6,12 @@ module.exports = () => {
   return merge(
     getCommonConfig(),
     {
-      mode: "production",
+      mode: "none",
+      // mode: "production",
       devtool: false,
     },
     modules.loadProdCss(),
-    modules.optimizeImages()
+    modules.optimizeImages(),
+    modules.optimizeBuild()
   );
 };

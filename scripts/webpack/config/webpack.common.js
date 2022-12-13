@@ -5,12 +5,19 @@ const { BUILD_DIRECTORY, SOURCE_DIRECTORY } = require("../constants");
 
 module.exports = () => {
   const { NODE_ENV } = process.env;
+  const isDev = NODE_ENV === "development";
+
   return merge(
     {
       entry: [SOURCE_DIRECTORY],
       output: {
         path: BUILD_DIRECTORY,
-        filename: "js/bundle.js",
+        filename: isDev
+          ? "js/[name].[hash:7].[id].bundle.js"
+          : "js/[name].[contenthash:7].[id].bundle.js",
+        chunkFilename: isDev
+          ? "js/[name].[hash:7].[id].bundle.js"
+          : "js/[name].[chunkhash:7].[id].bundle.js",
         clean: true,
       },
       plugins: [
