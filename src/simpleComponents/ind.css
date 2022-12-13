@@ -1,0 +1,51 @@
+@import "../fonts/index.css";
+
+.clicker {
+  background: burlywood;
+  font-family: Halyard Display, "Roboto Condensed";
+  font-weight: 300;
+}
+
+.jpgContainer,
+.jpegContainer,
+.svgContainer,
+.pngContainer {
+  display: flex;
+}
+
+.avaJpg {
+  width: 200px;
+}
+
+.cssBackJpg {
+  width: 200px;
+  height: 228px;
+  background-size: contain;
+}
+
+.cssBackJpeg {
+  width: 259px;
+  height: 228px;
+  background-size: contain;
+}
+
+.cssBackPng {
+  width: 256px;
+  height: 192px;
+  background-size: contain;
+}
+
+.png {
+  width: 256px;
+}
+
+.cssBackSvg {
+  background-image: url("../img/all.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.button {
+  height: 30px;
+  width: 150px;
+}
