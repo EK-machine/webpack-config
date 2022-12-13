@@ -1,0 +1,12 @@
+@import "../fonts/index.css";
+
+.div {
+  height: 70px;
+  width: 200px;
+  border: 2px solid red;
+  background-color: brown;
+  color: white;
+  font-family: Halyard Display, "Roboto Condensed";
+  font-weight: 300;
+  cursor: pointer;
+}
