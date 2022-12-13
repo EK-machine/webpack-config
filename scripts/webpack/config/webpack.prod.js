@@ -7,7 +7,6 @@ module.exports = () => {
     getCommonConfig(),
     {
       mode: "none",
-      // mode: "production",
       devtool: false,
     },
     modules.loadProdCss(),

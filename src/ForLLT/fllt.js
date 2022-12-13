@@ -7,7 +7,7 @@ const FLLT = () => {
       /*webpackChunkName: "lazyloadedText"*/ "../llt/lazyloadedtext"
     );
     const llts = await JSON.stringify(llt);
-    console.log(llts);
+    console.log("lazy load -->", llts);
   };
 
   return <div className={styles.div} onClick={handleClick} />;

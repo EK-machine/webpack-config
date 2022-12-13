@@ -13,12 +13,11 @@ module.exports = () => {
       output: {
         path: BUILD_DIRECTORY,
         filename: isDev
-          ? "js/[name].[hash:7].[id].bundle.js"
-          : "js/[name].[contenthash:7].[id].bundle.js",
-        chunkFilename: isDev
-          ? "js/[name].[hash:7].[id].bundle.js"
-          : "js/[name].[chunkhash:7].[id].bundle.js",
+          ? "js/bundle.[name].[hash].[id].js"
+          : "js/bundle.[name].[chunkhash].[id].js", // entry point bundle name
+        chunkFilename: "js/bundle.[name].[chunkhash].[id].js",
         clean: true,
+        hashDigestLength: 7, // defines how many characters will be in hash
       },
       plugins: [
         // DefinePlugin is used for creating enviroments to be visible anywhere the code
