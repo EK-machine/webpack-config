@@ -40,7 +40,9 @@ const optimizeBuild = () => ({
         },
       },
     },
-    runtimeChunk: false, // to do
+    // main build file with runtime containing reference to the third chunk will emit runtime to a separate file
+    // and that's why file with main component will not change it's name, just the file with runtime will do
+    runtimeChunk: true,
   },
 });
 

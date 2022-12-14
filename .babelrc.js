@@ -1,7 +1,3 @@
-// {
-//     "presets": ["@babel/preset-env", "@babel/preset-react"]
-// }
-
 module.exports = (api) => {
   const env = api.env();
   const plugins = [
@@ -19,7 +15,7 @@ module.exports = (api) => {
       [
         "@babel/preset-env",
         {
-          // debug: true,
+          debug: false,
           spec: true,
           loose: false,
           modules: false,

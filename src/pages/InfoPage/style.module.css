@@ -1,0 +1,21 @@
+@import "../../fonts/index.css";
+
+.div {
+  background: burlywood;
+  font-family: Halyard Display, "Roboto Condensed";
+  font-weight: 300;
+}
+
+.pngContainer {
+  display: flex;
+}
+
+.cssBackPng {
+  width: 256px;
+  height: 192px;
+  background-size: contain;
+}
+
+.png {
+  width: 256px;
+}

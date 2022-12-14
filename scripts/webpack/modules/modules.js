@@ -3,7 +3,8 @@ const { loadImages } = require("./images");
 const { loadSvg } = require("./svgs");
 const { loadDevCss, loadProdCss, loadSass } = require("./css");
 const { resolvers } = require("./resolvers");
-const { setupPlugins } = require("./plugins");
+const { htmlSetup } = require("./htmlSetup");
+const { setupUtils } = require("./utils");
 const { loadFonts } = require("./fonts");
 const { optimizeImages, optimizeBuild } = require("./optimization");
 
@@ -17,9 +18,10 @@ const modules = {
   loadSass,
   loadFonts,
   resolvers,
-  setupPlugins,
+  htmlSetup,
   optimizeImages,
   optimizeBuild,
+  setupUtils,
 };
 
 module.exports = { modules };

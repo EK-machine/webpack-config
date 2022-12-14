@@ -1,7 +1,11 @@
-import "./simpleComponents/ind";
-import { update } from "lodash-es";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App.jsx";
 
-console.log(update);
-console.log("env -->", __ENV__);
-console.log("dev -->", __DEV__);
-console.log("prod -->", __PROD__);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
