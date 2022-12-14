@@ -35,7 +35,8 @@ module.exports = () => {
     modules.loadImages(),
     modules.loadSass(),
     modules.loadFonts(),
+    modules.setupUtils(),
+    modules.htmlSetup()
     // modules.resolvers(),
-    modules.setupPlugins()
   );
 };

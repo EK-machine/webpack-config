@@ -1,0 +1,29 @@
+@import "../../fonts/index.css";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Halyard Display, "Roboto Condensed";
+  font-weight: 300;
+  height: 60px;
+}
+
+.link {
+  margin-right: 16px;
+}
+
+.link:last-child {
+  margin-right: 0px;
+}
+
+.div {
+  background: burlywood;
+  font-family: Halyard Display, "Roboto Condensed";
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
